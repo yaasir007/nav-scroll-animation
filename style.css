@@ -1,0 +1,68 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightseagreen;
+  position: sticky;
+}
+
+.logo {
+  width: 80px;
+}
+
+.items {
+  margin-right: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.items > * {
+  font-size: 1.2rem;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  text-align: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+main > p {
+  font-size: 2rem;
+}
+
+.holidays {
+  margin-block: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.holiday {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  background-color: lightseagreen;
+  padding: 2rem;
+  border-radius: 15px;
+  color: white;
+  transition: all .2s linear;
+}
+
+.holiday:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
