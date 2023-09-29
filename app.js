@@ -12,4 +12,16 @@ async function logMovies() {
   });
 }
 
+window.addEventListener('scroll', () => {
+  const nav = document.querySelector('nav');
+  let currentScrollPos = window.pageYOffset;
+  console.log(currentScrollPos);
+  if (currentScrollPos > 45) {
+    nav.style.backgroundColor = 'lightblue';
+    nav.classList.add('fadeIn')
+  } else {
+    nav.style.backgroundColor = 'lightseagreen';
+  }
+})
+
 logMovies();

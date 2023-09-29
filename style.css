@@ -10,7 +10,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: lightseagreen;
-  position: sticky;
+  position: fixed;
+  top: 0; 
+  overflow: hidden;
 }
 
 .logo {
@@ -30,10 +32,21 @@ nav {
   color: white;
 }
 
+.fadeIn { 
+  animation: fadeIn .5s;
+}
+
+@keyframes fadeIn {
+  0% { background-color: lightseagreen; }
+  100% { background-color: lightblue; }
+}
+
+
 main {
   text-align: center;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 8rem;
+
 }
 
 main > p {
@@ -59,7 +72,7 @@ main > p {
   padding: 2rem;
   border-radius: 15px;
   color: white;
-  transition: all .2s linear;
+  transition: all .15s linear;
 }
 
 .holiday:hover {
