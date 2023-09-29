@@ -15,12 +15,10 @@ async function logMovies() {
 window.addEventListener('scroll', () => {
   const nav = document.querySelector('nav');
   let currentScrollPos = window.pageYOffset;
-  console.log(currentScrollPos);
   if (currentScrollPos > 45) {
-    nav.style.backgroundColor = 'lightblue';
-    nav.classList.add('fadeIn')
+    nav.style.backgroundColor = '#98a0e2';
   } else {
-    nav.style.backgroundColor = 'lightseagreen';
+    nav.style.backgroundColor = '#565d87';
   }
 })
 

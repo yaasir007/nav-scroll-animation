@@ -4,15 +4,24 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #565d87;
+}
+
 nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: lightseagreen;
+  background-color: #565d87;
   position: fixed;
   top: 0; 
   overflow: hidden;
+  animation: fadeIn 1s linear;
+}
+
+main > p {
+  color: white;
 }
 
 .logo {
@@ -32,15 +41,16 @@ nav {
   color: white;
 }
 
-.fadeIn { 
-  animation: fadeIn .5s;
-}
-
 @keyframes fadeIn {
-  0% { background-color: lightseagreen; }
-  100% { background-color: lightblue; }
+  0% { 
+    opacity: 0; 
+    background-color: #98a0e2;
+  }
+  100% { 
+    opacity: 1; 
+    background-color: #565d87;
+  }
 }
-
 
 main {
   text-align: center;
@@ -73,6 +83,7 @@ main > p {
   border-radius: 15px;
   color: white;
   transition: all .15s linear;
+  border: 1px solid #98a0e2;
 }
 
 .holiday:hover {
