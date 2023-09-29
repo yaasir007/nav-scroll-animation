@@ -17,7 +17,7 @@ nav {
   position: fixed;
   top: 0; 
   overflow: hidden;
-  animation: fadeIn 1s linear;
+  transition: background-color .5s;
 }
 
 main > p {
@@ -39,17 +39,6 @@ main > p {
   list-style: none;
   text-decoration: none;
   color: white;
-}
-
-@keyframes fadeIn {
-  0% { 
-    opacity: 0; 
-    background-color: #98a0e2;
-  }
-  100% { 
-    opacity: 1; 
-    background-color: #565d87;
-  }
 }
 
 main {
